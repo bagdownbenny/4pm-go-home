@@ -16,7 +16,8 @@ public class BankingMain{
             System.out.println ("5 -> Update Customer Details");
             System.out.println ("6 -> Delete Customer");
             System.out.println ("0 -> Exit");
-            System.out.print ( s:"Enter your choice: ");
+            System.out.print ("Enter your choice: ");
+            System.out.println();
 
             choice = sc.nextInt();
 
