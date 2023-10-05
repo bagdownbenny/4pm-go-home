@@ -66,5 +66,13 @@ public class Customer {
         System.out.println( "This method will assist in opening an account ");
     }
 
+    public void displayDetails() {
+    System.out.println( " Customer Id :: " + custId);
+    System.out.println( " Customer Name :: " + custName);
+    System.out.println( " NRIC/FIN :: " + custUnique);
+    System.out.println( " Customer Email :: " + custEmail);
+    System.out.println( " Customer Phone No. :: " + phoneNo);
+    }
+
 
 }
