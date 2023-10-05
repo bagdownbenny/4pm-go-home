@@ -71,14 +71,31 @@ public abstract class Account {
 
 class SavingsAcc extends Account {
     protected double interest = 0;
-    protected double minBal;
+    protected double minBal = 500;
+
+    
+    // Getter and Setters
+    public double getInterest() {
+        return interest;
+    }
+
+    public void setInterest(double interest) {
+        this.interest = interest;
+    }
+
+    public double getMinBal() {
+        return minBal;
+    }
+
+    public void setMinBal(double minBal) {
+        this.minBal = minBal;
+    }
 
     public SavingsAcc(int accNo, String custUnique, String branch) {
         super(accNo, custUnique, branch);
-        // add interest and minBal
     }
 
-    // Creating a new Customer Object
+    // Creating a new Savings Object
     public static SavingsAcc createSavings(int accNo, String custUnique, String branch) {
         SavingsAcc s1 = new SavingsAcc(accNo, custUnique, branch);
         return s1;
@@ -95,17 +112,19 @@ class SavingsAcc extends Account {
 }
 
 class CheckingAcc extends Account {
-    protected boolean checkBookStatus;
+    protected boolean checkBookStatus = true;
     protected double odLimit = 0;
     protected double overFees = 0;
 
-    public CheckingAcc(int accNo, String custUnique, String[] transactions, double balance, double oveLimit,
-            double overFees) {
-        super(accNo, custUnique, transactions, balance);
-        this.oveLimit = oveLimit;
-        this.overFees = overFees;
+    public CheckingAcc(int accNo, String custUnique, String branch) {
+        super(accNo, custUnique, branch);
     }
-
+    
+    // Creating a new Savings Object
+    public static CheckingAcc createChecking(int accNo, String custUnique, String branch) {
+        CheckingAcc cc1 = new CheckingAcc(accNo, custUnique, branch);
+        return cc1;
+    }
 
     @Override
     public double withdraw(double amount) {

@@ -9,6 +9,7 @@ public class BankingMain{
         int choice = 0;
         Customer cObj; 
         SavingsAcc sAcc;
+        CheckingAcc cAcc;
         while (true){
             
             System.out.println ("1 -> Register Customer");
@@ -42,15 +43,21 @@ public class BankingMain{
                 }
                 case 2 -> {//Open Account
                     System.out.println("<<<< Open Account >>>>");
+                    System.out.println( " Enter account number for creation :: ");
+                    int accNo = sc.nextInt();
+                    System.out.println( " Enter Customer Unique Identifier :: ");
+                    String custUnique = sc.next();
+                    System.out.println( " Enter branch :: ");
+                    String branch = sc.next();
                     System.out.println("What type of account would you like to open?");
                     System.out.println("1 -> Savings Account");
                     System.out.println("2 -> Current Account");
                     int type = sc.nextInt();
-                    if (type == 1){
-                        sAcc = Customer.SavingsAcc(int accNo, String custUnique, String[] transactions, double balance, double interest);
+                    if (type == 1){                      
+                        sAcc = SavingsAcc.createSavings(accNo, custUnique, branch);
                     }
                     if (type == 2){
-                        sAcc = Customer.CurrentAcc(int accNo, String custUnique, String[] transactions, double balance, double interest);
+                        cAcc = CheckingAcc.createChecking(accNo, custUnique, branch);
                     }
                     System.out.println("Congratulations! Your account has been successfully created");
                     break;
