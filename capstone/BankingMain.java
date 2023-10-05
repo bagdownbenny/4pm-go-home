@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class BankingMain{
 
     public static void main(String[] args){
+        Customer cObj;
         Scanner sc = new Scanner(System.in);
         int choice = 0;
         while (true){
