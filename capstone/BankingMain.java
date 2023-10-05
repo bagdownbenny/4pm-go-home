@@ -1,6 +1,6 @@
 package capstone;
 
-import java.util.Scanner
+import java.util.Scanner;
 
 public class BankingMain{
 
@@ -9,13 +9,13 @@ public class BankingMain{
         int choice = 0;
         while (true){
             
-            System.out.println ( x:"1 -> Register Customer");
-            System.out.println ( x:"2 -> Open Account");
-            System.out.println ( x:"3 -> Close Account");
-            System.out.println ( x:"4 -> Display Customer Details");
-            System.out.println ( x:"5 -> Update Customer Details");
-            System.out.println ( x:"6 -> Delete Customer");
-            System.out.println ( x:"0 -> Exit")
+            System.out.println ("1 -> Register Customer");
+            System.out.println ("2 -> Open Account");
+            System.out.println ("3 -> Close Account");
+            System.out.println ("4 -> Display Customer Details");
+            System.out.println ("5 -> Update Customer Details");
+            System.out.println ("6 -> Delete Customer");
+            System.out.println ("0 -> Exit");
             System.out.print ( s:"Enter your choice: ");
 
             choice = sc.nextInt();
@@ -39,7 +39,7 @@ public class BankingMain{
                 case 3 -> 
                 case 4 -> 
                 case 5 -> 
-                case 6 -> */
+                case 6 -> 
                 
 
             }
