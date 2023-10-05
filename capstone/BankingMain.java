@@ -38,11 +38,15 @@ public class BankingMain{
                     cObj = Customer.regCustomer(custId, custName, custUnique, custEmail, phoneNo);
                 }
                 case 2 -> //Open Account
+                    System.out.println("<<<< Open Account >>>>");
                 case 3 -> //Close Account
-                case 4 -> //Display 
-                case 5 -> 
-                case 6 -> 
-                
+                System.out.println("<<<< Close Account >>>>");
+                case 4 -> //Display Customer Details
+                System.out.println("<<<<Display Customer Details >>>>");
+                case 5 -> //Update Customer Details
+                System.out.println("<<<< Update Customer Details >>>>");
+                case 6 -> //Delete Customer 
+                System.out.println(" <<<< Delete Customer & Details >>>>");
 
             }
             
