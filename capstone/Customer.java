@@ -67,12 +67,15 @@ public class Customer {
     }
 
     public void displayDetails() {
-    System.out.println( " Customer Id :: " + custId);
-    System.out.println( " Customer Name :: " + custName);
-    System.out.println( " NRIC/FIN :: " + custUnique);
-    System.out.println( " Customer Email :: " + custEmail);
-    System.out.println( " Customer Phone No. :: " + phoneNo);
+        System.out.println( " Customer Id :: " + custId);
+        System.out.println( " Customer Name :: " + custName);
+        System.out.println( " NRIC/FIN :: " + custUnique);
+        System.out.println( " Customer Email :: " + custEmail);
+        System.out.println( " Customer Phone No. :: " + phoneNo);
     }
+
+    //edit details
+    //delete customer
 
 
 }

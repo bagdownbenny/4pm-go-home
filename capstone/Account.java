@@ -6,27 +6,25 @@ public class Account {
     String [] transactions;
     double balance = 0;
 
-    public Account (int accNo, String custUnique, String[] transactions, double balance) {
+    public Account (int accNo, String custUnique) {
         this.accNo = accNo;
         this.custUnique = custUnique;
-        this.transactions = transactions;
-        this.balance = balance;
     }
-
-    
 }
 
 
 class SavingsAcc extends Account {
     double interest = 0;
 
-    public SavingsAcc(int accNo, String custUnique, String[] transactions, double balance, double interest) {
-        super(accNo, custUnique, transactions, balance);
-        this.interest = interest;
+    public SavingsAcc(int accNo, String custUnique) {
+        super(accNo, custUnique);
     }
 
-    
-    
+       //Creating a new Customer Object
+    public static Customer createSavings(int accNo, String custUnique){
+        Customer c1 = new SavingsAcc(accNo, custUnqiue);
+        return c1;
+    }
 
 }
 
