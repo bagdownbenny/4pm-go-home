@@ -31,6 +31,15 @@ public class Customer {
     public void setCustName(String custName) {
         this.custName = custName;
     }
+
+    //Getter and Setter for custUnqiue
+      public String getCustUnique() {
+        return custUnique;
+    }
+    public void setCustUnique(String custUnique) {
+        this.custUnique = custUnique;
+    }
+
     //Getter and Setter for custEmail
     public String getCustEmail() {
         return custEmail;
