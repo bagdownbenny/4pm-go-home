@@ -53,11 +53,20 @@ public class BankingMain{
                         sAcc = Customer.CurrentAcc(int accNo, String custUnique, String[] transactions, double balance, double interest);
                     }
                     System.out.println("Congratulations! Your account has been successfully created");
-                    break;}
-                case 3 -> //Close Account
-                System.out.println("<<<< Close Account >>>>");
-                case 4 -> //Display Customer Details
-                System.out.println("<<<<Display Customer Details >>>>");
+                    break;
+                }
+                case 3 -> {//Close Account
+                    System.out.println("<<<< Close Account >>>>");
+                    break;
+                }
+
+                case 4 -> {//Display Customer Details
+                    System.out.println("<<<< Display Customer Details >>>>");
+                    System.out.println(" Please enter your customer ID: ");
+
+
+                    break;
+                }
                 case 5 -> //Update Customer Details
                 System.out.println("<<<< Update Customer Details >>>>");
                 case 6 -> //Delete Customer 

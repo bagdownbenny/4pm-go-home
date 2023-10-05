@@ -31,6 +31,15 @@ public class Customer {
     public void setCustName(String custName) {
         this.custName = custName;
     }
+
+    //Getter and Setter for custUnqiue
+      public String getCustUnique() {
+        return custUnique;
+    }
+    public void setCustUnique(String custUnique) {
+        this.custUnique = custUnique;
+    }
+
     //Getter and Setter for custEmail
     public String getCustEmail() {
         return custEmail;
@@ -55,6 +64,14 @@ public class Customer {
 
     public void openAccount() {
         System.out.println( "This method will assist in opening an account ");
+    }
+
+    public void displayDetails() {
+    System.out.println( " Customer Id :: " + custId);
+    System.out.println( " Customer Name :: " + custName);
+    System.out.println( " NRIC/FIN :: " + custUnique);
+    System.out.println( " Customer Email :: " + custEmail);
+    System.out.println( " Customer Phone No. :: " + phoneNo);
     }
 
 
