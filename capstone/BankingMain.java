@@ -43,7 +43,9 @@ public class BankingMain{
                 case 3 -> //Close Account
                     System.out.println("<<<< Close Account >>>>");
                 case 4 -> //Display Customer Details
-                    System.out.println("<<<<Display Customer Details >>>>");
+                    System.out.println("<<<< Display Customer Details >>>>");
+                    System.out.println("All information");
+
                 case 5 -> //Update Customer Details
                     System.out.println("<<<< Update Customer Details >>>>");
                 case 6 -> //Delete Customer 
