@@ -24,6 +24,7 @@ public class BankingMain{
             switch(choice){
                 case 0 -> System.exit(0);
                 case 1 -> {
+                    System.out.println("Welcome to Register Customer Page");
                     System.out.println( " Enter Customer Id :: ");
                     int custId = sc.nextInt();
                     System.out.println( " Enter Customer Name :: ");
@@ -36,9 +37,9 @@ public class BankingMain{
                     int phoneNo = sc.nextInt();
                     cObj = Customer.regCustomer(custId, custName, custUnique, custEmail, phoneNo);
                 }
-                case 2 -> 
-                case 3 -> 
-                case 4 -> 
+                case 2 -> //Open Account
+                case 3 -> //Close Account
+                case 4 -> //Display 
                 case 5 -> 
                 case 6 -> 
                 
