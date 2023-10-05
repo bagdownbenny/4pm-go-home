@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class BankingMain{
 
-    public static void main[String[] args]{
+    public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int choice = 0;
         while (true){
@@ -42,7 +42,9 @@ public class BankingMain{
                 case 3 -> //Close Account
                     System.out.println("<<<< Close Account >>>>");
                 case 4 -> //Display Customer Details
-                    System.out.println("<<<<Display Customer Details >>>>");
+                    System.out.println("<<<< Display Customer Details >>>>");
+                    System.out.println("All information");
+
                 case 5 -> //Update Customer Details
                     System.out.println("<<<< Update Customer Details >>>>");
                 case 6 -> //Delete Customer 
